@@ -15,7 +15,7 @@
     <RootNamespace>PlantillaProyecto</RootNamespace>
     <AssemblyName>PlantillaProyecto</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort>44338</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\Config.txt" />
     <Content Include="Assets\Carrousel\carousel.css" />
     <Content Include="Assets\Carrousel\carousel.rtl.css" />
     <Content Include="Assets\css\demo.css" />
@@ -131,6 +132,7 @@
     <Content Include="Assets\img\elements\5.jpg" />
     <Content Include="Assets\img\elements\7.jpg" />
     <Content Include="Assets\img\favicon\favicon.ico" />
+    <Content Include="Assets\img\fondo.jpg" />
     <Content Include="Assets\img\icons\brands\asana.png" />
     <Content Include="Assets\img\icons\brands\behance.png" />
     <Content Include="Assets\img\icons\brands\dribbble.png" />
@@ -156,6 +158,7 @@
     <Content Include="Assets\img\layouts\layout-fluid-light.png" />
     <Content Include="Assets\img\layouts\layout-without-menu-light.png" />
     <Content Include="Assets\img\layouts\layout-without-navbar-light.png" />
+    <Content Include="Assets\img\logo-transparente.png" />
     <Content Include="Assets\js\config.js" />
     <Content Include="Assets\js\dashboards-analytics.js" />
     <Content Include="Assets\js\extended-ui-perfect-scrollbar.js" />
@@ -192,6 +195,37 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="CSS\tabla_default\css\main.css" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\OFL.txt" />
+    <Content Include="CSS\tabla_default\css\util.css" />
+    <Content Include="CSS\tabla_default\vendor\animate\animate.css" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\js\popper.js" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="CSS\tabla_default\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="CSS\tabla_default\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="CSS\tabla_default\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="CSS\tabla_default\vendor\select2\select2.css" />
+    <Content Include="CSS\tabla_default\vendor\select2\select2.js" />
+    <Content Include="CSS\tabla_default\vendor\select2\select2.min.css" />
+    <Content Include="CSS\tabla_default\vendor\select2\select2.min.js" />
+    <Content Include="CSS\tabla_default\vendor\tilt\tilt.jquery.min.js" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -209,10 +243,226 @@
     <Content Include="Assets\vendor\fonts\boxicons\boxicons.ttf" />
     <Content Include="Assets\vendor\fonts\boxicons\boxicons.woff" />
     <Content Include="Assets\vendor\fonts\boxicons\boxicons.woff2" />
+    <Content Include="index.aspx" />
+    <Content Include="JS\JSIndex.js" />
+    <Content Include="login_css\css\main.css" />
+    <Content Include="login_css\css\util.css" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="login_css\fonts\montserrat\OFL.txt" />
+    <Content Include="login_css\images\icons\favicon.ico" />
+    <Content Include="login_css\images\img-01.png" />
+    <Content Include="login_css\js\main.js" />
+    <Content Include="login_css\vendor\animate\animate.css" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="login_css\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="login_css\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="login_css\vendor\bootstrap\js\popper.js" />
+    <Content Include="login_css\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="login_css\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="login_css\vendor\css-hamburgers\hamburgers.css" />
+    <Content Include="login_css\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="login_css\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="login_css\vendor\select2\select2.css" />
+    <Content Include="login_css\vendor\select2\select2.js" />
+    <Content Include="login_css\vendor\select2\select2.min.css" />
+    <Content Include="login_css\vendor\select2\select2.min.js" />
+    <Content Include="login_css\vendor\tilt\tilt.jquery.min.js" />
     <Content Include="Plugins\Datatables-Bootstrap\bootstrap-table.scss" />
     <Content Include="Plugins\DataTables\Buttons-2.3.3\css\common.scss" />
     <Content Include="Plugins\DataTables\Buttons-2.3.3\css\mixins.scss" />
     <Content Include="Plugins\jquery-ui-1.12.1\package.json" />
+    <Content Include="WS\WsMantenimiento.asmx" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="login_css\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="login_css\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="login_css\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="login_css\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\core.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\list.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\path.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="CSS\tabla_default\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-BlackItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-BoldItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-ExtraBold.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-ExtraBoldItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-ExtraLight.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-ExtraLightItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-Light.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-LightItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-MediumItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-SemiBold.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-SemiBoldItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-Thin.ttf" />
+    <Content Include="CSS\tabla_default\fonts\montserrat\Montserrat-ThinItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-BlackItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-BoldItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-ExtraBold.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-ExtraBoldItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-ExtraLight.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-ExtraLightItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-Italic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-Light.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-LightItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-Medium.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-MediumItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-Regular.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-SemiBold.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-SemiBoldItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-Thin.ttf" />
+    <Content Include="CSS\tabla_default\fonts\poppins\Poppins-ThinItalic.ttf" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\core.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\list.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\path.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="CSS\tabla_default\fonts\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="CSS\tabla_default\vendor\bootstrap\css\bootstrap.min.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Plugins\chart.min.js" />
     <Content Include="Plugins\Datatables-Bootstrap\bootstrap-table-es-MX.js" />
@@ -487,6 +737,7 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Start\BundleConfig2.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Carrousel.aspx.cs">
       <DependentUpon>Carrousel.aspx</DependentUpon>
@@ -495,6 +746,7 @@
     <Compile Include="Carrousel.aspx.designer.cs">
       <DependentUpon>Carrousel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Conexion.cs" />
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -512,6 +764,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -534,9 +794,13 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WS\WsMantenimiento.asmx.cs">
+      <DependentUpon>WsMantenimiento.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
     <Folder Include="Plugins\bootstrap\" />
   </ItemGroup>
   <ItemGroup>
@@ -565,7 +829,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56684</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44338/</IISUrl>
+          <IISUrl>http://localhost/PlantillaProyecto</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -24,6 +24,15 @@ namespace PlantillaProyecto
         protected global::System.Web.UI.WebControls.ContentPlaceHolder header;
 
         /// <summary>
+        /// Control btnSearch.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnSearch;
+
+        /// <summary>
         /// Control MainContent.
         /// </summary>
         /// <remarks>
